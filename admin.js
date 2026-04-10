@@ -5,7 +5,7 @@ const SECRET_CODE = 'admkerenjir'; // Ganti dengan kode rahasia kamu!
 
 // GitHub Token (buat di Settings > Developer settings > Personal access tokens)
 // Token perlu izin: repo (full control)
-let GITHUB_TOKEN = 'github_pat_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'; // Ganti dengan token asli kamu
+let GITHUB_TOKEN = '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'; // Ganti dengan token asli kamu
 
 async function verifyCode() {
     const code = document.getElementById('secretCode').value;
