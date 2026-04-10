@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Pembuat Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🔐 Panel Pembuat Blog</h1>
+        <p>Masukkan kode rahasia untuk mengelola blog</p>
+    </header>
+
+    <main>
+        <div id="authSection">
+            <input type="password" id="secretCode" placeholder="Masukkan Kode Rahasia">
+            <button onclick="verifyCode()">Akses Panel</button>
+            <p id="errorMsg" style="color: red; margin-top: 10px;"></p>
+        </div>
+
+        <div id="adminPanel" style="display: none;">
+            <h2>✏️ Buat Artikel Baru</h2>
+            <form id="blogForm">
+                <input type="text" id="title" placeholder="Judul" required>
+                <input type="text" id="author" placeholder="Pembuat" required>
+                <input type="text" id="subtitle" placeholder="Subjudul" required>
+                <textarea id="content" rows="10" placeholder="Isi teks blog..." required></textarea>
+                <button type="submit">Publish Artikel</button>
+            </form>
+            <hr>
+            <h2>📋 Semua Artikel</h2>
+            <div id="adminPostList"></div>
+        </div>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>
